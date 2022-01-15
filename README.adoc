@@ -14,7 +14,7 @@ image::https://github.com/MarcoSteinke/Virtual-Environment-in-Browser/blob/main/
 ## ℹ️ 1. Introduction: 
 
 This repository does include a simple implementation of 3D rooms using equirectangular textures in THREE.js. But what does this mean?
-Actually you can insert some images into the `/rooms` directory and add the images names to the list `rooms` in line 19 of `index.html`.
+Actually you can insert some images into the `/rooms` directory and add the images names to the list `rooms` in `index.html`.
 
 Then if you start the node-project as mentioned in `3. Deployment` you are able to visit 3D locations in your browser.
 
