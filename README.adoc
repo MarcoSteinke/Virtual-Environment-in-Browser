@@ -1,9 +1,26 @@
+ifdef::env-github[]
+:tip-caption: :bulb:
+:note-caption: :information_source:
+:important-caption: :heavy_exclamation_mark:
+:caution-caption: :fire:
+:warning-caption: :warning:
+endif::[]
+
 # Virtual-Environment-in-Browser
 Simple implementation of 3D rooms using equirectangular textures in THREE.js
 
 image::https://github.com/MarcoSteinke/Virtual-Environment-in-Browser/blob/main/demo.gif?raw=true[]
 
 ## 1. Introduction: 
+
+This repository does include a simple implementation of 3D rooms using equirectangular textures in THREE.js. But what does this mean?
+Actually you can insert some images into the `/rooms` directory and add the images names to the list `rooms` in line 19 of `index.html`.
+
+Then if you start the node-project as mentioned in `3. Deployment` you are able to visit 3D locations in your browser.
+
+This tool may be helpful for smaller business to add an impression of your local shop to your website. You may also be working for a museum or
+a sightseeing agency and want to give some preview what customers may see when visiting you. You may also be a self-employed real estate agent 
+and want your customers to get an impression of a real estate location without buying expensive software. Then this tool will definitely help you.
 
 ## 2. Requirements:
 
@@ -25,6 +42,18 @@ image::https://github.com/MarcoSteinke/Virtual-Environment-in-Browser/blob/main/
 
 http://localhost:3000[localhost:3000]
 
-## 4. License: 
+## 4. Adding new rooms:
+
+To add new rooms you can do as follows:
+
+- Think about a name for your room, e.g. `living room`.
+- Add the name to the array `rooms` in line 19 of `index.html`.
+- Place the image file as jpg in the `/rooms` directory.
+
+WARNING: The image needs to be a jpg file and also needs to be in a https://onix-systems.medium.com/how-to-use-360-equirectangular-panoramas-for-greater-realism-in-games-55fadb0547da[equirectangular format].
+
+- Now after starting the application, buttons for all configured rooms will be added to the website.
+
+## 5. License: 
 
 TBD
