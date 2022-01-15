@@ -54,6 +54,12 @@ WARNING: The image needs to be a jpg file and also needs to be in a https://onix
 
 - Now after starting the application, buttons for all configured rooms will be added to the website.
 
-## ⚖ 5. License: 
+## ⚡️ 5. Upcoming features:
+
+- Removal of the duty of adding the room names to the `rooms` in the `index.html`. Instead the images from the directory `/rooms` will automatically be read and the buttons will be generated from the image names.
+- opportunities to add the 3d virtual environment viewer to your website and to change the style
+- maybe centralised deployment and opportunity for business to register and host your rooms in a stable environment.
+
+## ⚖ 6. License: 
 
 TBD
