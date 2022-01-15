@@ -18,3 +18,5 @@ Simple implementation of 3D rooms using equirectangular textures in THREE.js
   node server.js
   
 - open up `localhost:3000` in your web browser.
+
+http://localhost:3000[localhost:3000]
