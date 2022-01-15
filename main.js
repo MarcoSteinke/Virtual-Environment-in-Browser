@@ -21,7 +21,7 @@ async function init() {
 
     loader = new THREE.TextureLoader();
 	texture = loader.load(
-		"bridge.jpg", 
+		"./rooms/bridge.jpg", 
         () => {
             const renderTarget = new THREE.WebGLCubeRenderTarget(texture.image.height)
             renderTarget.fromEquirectangularTexture(renderer, texture)
@@ -31,7 +31,7 @@ async function init() {
 
 function changeBackground(name) {
     texture = loader.load(
-		`${name}.jpg`, 
+		`./rooms/${name}.jpg`, 
         () => {
             const renderTarget = new THREE.WebGLCubeRenderTarget(texture.image.height)
             renderTarget.fromEquirectangularTexture(renderer, texture)
