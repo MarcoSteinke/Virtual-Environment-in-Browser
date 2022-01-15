@@ -6,12 +6,12 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-# Virtual-Environment-in-Browser
+# 🌍 Virtual-Environment-in-Browser
 Simple implementation of 3D rooms using equirectangular textures in THREE.js
 
 image::https://github.com/MarcoSteinke/Virtual-Environment-in-Browser/blob/main/demo.gif?raw=true[]
 
-## 1. Introduction: 
+## ℹ️ 1. Introduction: 
 
 This repository does include a simple implementation of 3D rooms using equirectangular textures in THREE.js. But what does this mean?
 Actually you can insert some images into the `/rooms` directory and add the images names to the list `rooms` in line 19 of `index.html`.
@@ -22,11 +22,11 @@ This tool may be helpful for smaller business to add an impression of your local
 a sightseeing agency and want to give some preview what customers may see when visiting you. You may also be a self-employed real estate agent 
 and want your customers to get an impression of a real estate location without buying expensive software. Then this tool will definitely help you.
 
-## 2. Requirements:
+## 🔧 2. Requirements:
 
 - Node JS
 
-## 3. Deployment:
+## 🔨 3. Deployment:
 
 - Clone this repository
 - cd into the local repository
@@ -42,7 +42,7 @@ and want your customers to get an impression of a real estate location without b
 
 http://localhost:3000[localhost:3000]
 
-## 4. Adding new rooms:
+## ➕ 4. Adding new rooms:
 
 To add new rooms you can do as follows:
 
@@ -54,6 +54,6 @@ WARNING: The image needs to be a jpg file and also needs to be in a https://onix
 
 - Now after starting the application, buttons for all configured rooms will be added to the website.
 
-## 5. License: 
+## ⚖ 5. License: 
 
 TBD
