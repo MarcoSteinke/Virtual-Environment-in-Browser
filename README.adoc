@@ -1,11 +1,15 @@
 # Virtual-Environment-in-Browser
 Simple implementation of 3D rooms using equirectangular textures in THREE.js
 
-## Requirements:
+image::https://github.com/MarcoSteinke/Virtual-Environment-in-Browser/blob/main/demo.gif?raw=true[]
+
+## 1. Introduction: 
+
+## 2. Requirements:
 
 - Node JS
 
-## Deployment:
+## 3. Deployment:
 
 - Clone this repository
 - cd into the local repository
@@ -20,3 +24,7 @@ Simple implementation of 3D rooms using equirectangular textures in THREE.js
 - open up `localhost:3000` in your web browser.
 
 http://localhost:3000[localhost:3000]
+
+## 4. License: 
+
+TBD
