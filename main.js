@@ -1,24 +1,28 @@
-let scene, renderer, camera;
+let scene, renderer, camera, loader;
 const canvas = document.querySelector("#canvas");
 
 function init() {
-    const camera = new THREE.PerspectiveCamera( 45, canvas.clientWidth / canvas.clientHeight, 1, 1000 );
+    camera = new THREE.PerspectiveCamera( 45, canvas.clientWidth / canvas.clientHeight, 1, 1000 );
 
+    renderer = new THREE.WebGLRenderer( { canvas } );
 
-    const scene = new THREE.Scene();
+    scene = new THREE.Scene();
 
-    loader = new THREE.CubeTextureLoader();
+    const light = new THREE.AmbientLight( 0x404040 ); // soft white light
+    scene.add( light );
+
+    loader = new THREE.TextureLoader();
 	const texture = loader.load(
-		'https://r105.threejsfundamentals.org/threejs/resources/images/daikanyama.jpg', () => {
-        scene.background = texture;
-    } );
-    const renderer = new THREE.WebGLRenderer( { canvas } );
+		"sky.jpg", 
+        () => {
+            scene.background = texture;
+    });
 }
 
 function render() {
-    renderer.setSize(canvas.clientWidth, canvas.clientHeight);
     renderer.render(scene, camera);
     requestAnimationFrame(render);
 }
+requestAnimationFrame(render);
 
 init()
