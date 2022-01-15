@@ -1,0 +1,20 @@
+# Virtual-Environment-in-Browser
+Simple implementation of 3D rooms using equirectangular textures in THREE.js
+
+## Requirements:
+
+- Node JS
+
+## Deployment:
+
+- Clone this repository
+- cd into the local repository
+- type the following command to install npm dependencies:
+
+  npm install
+  
+- run the node-js project using the following command:
+
+  node server.js
+  
+- open up `localhost:3000` in your web browser.
