@@ -12,5 +12,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
     <script src="main.js"></script>
+    <h1>View other rooms:</h1>
+    <button id="bridge">Bridge</button>
+    <button id="building">Building</button>
 </body>
+<script>
+    document.querySelectorAll("button").forEach(
+        button => {
+            button.addEventListener("click", function(event) {
+                event.preventDefault();
+                console.log(button.id);
+                changeBackground(button.id);
+            })
+        }
+    )
+</script>
 </html>

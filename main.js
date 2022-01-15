@@ -1,7 +1,12 @@
-let scene, renderer, camera, loader, controls;
+let scene, renderer, camera, loader, controls, texture;
 const canvas = document.querySelector("#canvas");
 
-function init() {
+const views = [
+    "bridge",
+    "building"
+]
+
+async function init() {
     camera = new THREE.PerspectiveCamera( 50, canvas.clientWidth / canvas.clientHeight, 0.1, 2000 );
     camera.position.z = 1
 
@@ -15,8 +20,18 @@ function init() {
     scene.add( light );
 
     loader = new THREE.TextureLoader();
-	const texture = loader.load(
+	texture = loader.load(
 		"bridge.jpg", 
+        () => {
+            const renderTarget = new THREE.WebGLCubeRenderTarget(texture.image.height)
+            renderTarget.fromEquirectangularTexture(renderer, texture)
+            scene.background = renderTarget.texture;
+    });
+}
+
+function changeBackground(name) {
+    texture = loader.load(
+		`${name}.jpg`, 
         () => {
             const renderTarget = new THREE.WebGLCubeRenderTarget(texture.image.height)
             renderTarget.fromEquirectangularTexture(renderer, texture)
