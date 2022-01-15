@@ -13,10 +13,21 @@
     <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
     <script src="main.js"></script>
     <h1>View other rooms:</h1>
-    <button id="bridge">Bridge</button>
-    <button id="building">Building</button>
+    <div id="rooms-container"></div>
 </body>
 <script>
+    const rooms = [
+        "bridge",
+        "building"
+    ];
+
+    rooms.forEach(
+        room => {
+            document.querySelector("#rooms-container").insertAdjacentHTML(
+                "beforeend", `<button id="${room}">${[room[0].toUpperCase(), room.slice(1,room.length)].join("")}</button>`
+            )
+        }
+    )
     document.querySelectorAll("button").forEach(
         button => {
             button.addEventListener("click", function(event) {
