@@ -16,7 +16,7 @@ function init() {
 
     loader = new THREE.TextureLoader();
 	const texture = loader.load(
-		"sky.jpg", 
+		"bridge.jpg", 
         () => {
             const renderTarget = new THREE.WebGLCubeRenderTarget(texture.image.height)
             renderTarget.fromEquirectangularTexture(renderer, texture)
